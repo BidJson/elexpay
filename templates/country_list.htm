@@ -1,0 +1,8 @@
+	<%for(var country in obj.country_app_map){
+		var country_app_link = 'list_channels_'+obj.parent_app_id+'_'+country+'.html?uid='+obj.uid;
+		if(obj.parent_app_id == obj.country_app_map[country]) {
+			country_app_link = 'list_channels_'+obj.parent_app_id+'.html?uid='+obj.uid;
+		}
+	%>
+		<span <%if(country==obj.country){%>class="inActive"<%}%>><a target="_self" href="<%=country_app_link%>"><img src="http://p.img.elex-tech.us/pay/country/<%=country%>_logo.png"/></a></span>
+	<% } %>

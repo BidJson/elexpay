@@ -1,0 +1,10 @@
+<% for(var i=0; i<obj.length; i++) { 
+if(obj[i].channel == 'facebook') continue;
+%>
+	<div class="payListLi">
+		<div class="payListLiWrap">
+			<div class="payName"><%=obj[i].alt%></div>
+			<div class="payImg"><img alt="<%=obj[i].alt%>" src="<%=obj[i].logo%>" id="<%=obj[i].channel%>_<%=obj[i].payment_method%>_tip"></div>
+		</div>	
+	</div>
+<% } %>

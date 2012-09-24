@@ -1,0 +1,327 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<link href="https://elex-i.akamaihd.net/platform.elex-tech.us/337/pay/css/pay.css?2011031501" rel="stylesheet" type="text/css" />
+<link rel="stylesheet" href="https://elex-i.akamaihd.net/platform.elex-tech.us/pay/css/thickbox.css?2012020401" type="text/css" media="screen" />
+<link href="http://ajax.googleapis.com/ajax/libs/jqueryui/1.8/themes/base/jquery-ui.css" rel="stylesheet" type="text/css"/>
+<script language="javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.4.2/jquery.min.js"></script>
+<script src="http://ajax.googleapis.com/ajax/libs/jqueryui/1.8/jquery-ui.min.js"></script>
+<script type="text/javascript" src="https://elex-i.akamaihd.net/platform.elex-tech.us/pay/js/jquery.metadata.js"></script>
+<script type="text/javascript" src="https://elex-i.akamaihd.net/platform.elex-tech.us/pay/js/thickbox.js?2012020401"></script>
+<script language="javascript">
+var appId = 'a82540d03cdc012e91ea1edb0f3c16bf';
+var appId2 = '';
+var redmine_app_name = 'ddt@elex337_pt_11';
+var uid = getParameter('uid');
+var list_channels_data = {"uid":"123","payment_methods":[{"logo":"http://p.img.elex-tech.us/pay/pagseguro.png","alt":"pagseguro","channel":"pagseguro","payment_method":"pagseguro"},{"logo":"http://p.img.elex-tech.us/pay/boacompra.png","alt":"boacompra","channel":"boacompra","payment_method":"boacompra"},{"logo":"http://p.img.elex-tech.us/pay/mozca.png","alt":"Celular","channel":"mozca","payment_method":"mozca"},{"logo":"http://p.img.elex-tech.us/pay/337credits.png","alt":"337","channel":"elex337","payment_method":"337"},{"logo":"http://p.img.elex-tech.us/pay/ukash.png","alt":"Ukash","channel":"ukash","payment_method":"ukash"},{"logo":"http://p.img.elex-tech.us/pay/eprepag.png","alt":"EPrePag","channel":"eprepag","payment_method":"eprepag"}],"tip_select_package":"Selecione o pacote","app_id2":"","tip_customer_service":"Serviço de Atendimento ao Cliente","cs_form_title":"Abrir um chamado","offer":[{"name":"Sponsorpay","tip_other_choice":"Você também pode comprar utilizando os seguintes meios de pagamento:","src":"http://iframe.sponsorpay.com/?appid=5542&uid={user_id}&pub0=a82540d03cdc012e91ea1edb0f3c16bf","channel":"sponsorpay"}],"tip_select_payment_method":"Selecione o meio de pagamento","country":"BR","list_channel_version":"6","image_337_url":"http://payment.eleximg.com/payment","redmine_app_name":"ddt@elex337_pt_11","tip_compare_and_order":"Compare and order","name":"ddt@elex337_pt_11","tip_customer_service_email":"payment@elex-tech.com","app_id":"a82540d03cdc012e91ea1edb0f3c16bf","language":"pt","tip_loading":"carga"};
+var list_packages_data = {"pagseguro_pagseguro":{"list_packages":[{"amount":"50000","best_value":false,"gross":"500","currency_logo":"http:\/\/p.img.337.com\/pay\/ddtcupom.png","currency_name":"Cupons","revised_amount":"50000","currency_symbol":"R$","show_amount":"50000","currency":"BRL"},{"amount":"30000","best_value":false,"gross":"300","currency_logo":"http:\/\/p.img.337.com\/pay\/ddtcupom.png","currency_name":"Cupons","revised_amount":"30000","currency_symbol":"R$","show_amount":"30000","currency":"BRL"},{"amount":"10000","best_value":false,"gross":"100","currency_logo":"http:\/\/p.img.337.com\/pay\/ddtcupom.png","currency_name":"Cupons","revised_amount":"10000","currency_symbol":"R$","show_amount":"10000","currency":"BRL"},{"amount":"5000","best_value":false,"gross":"50","currency_logo":"http:\/\/p.img.337.com\/pay\/ddtcupom.png","currency_name":"Cupons","revised_amount":"5000","currency_symbol":"R$","show_amount":"5000","currency":"BRL"},{"amount":"3000","best_value":false,"gross":"30","currency_logo":"http:\/\/p.img.337.com\/pay\/ddtcupom.png","currency_name":"Cupons","revised_amount":"3000","currency_symbol":"R$","show_amount":"3000","currency":"BRL"},{"amount":"1000","best_value":false,"gross":"10","currency_logo":"http:\/\/p.img.337.com\/pay\/ddtcupom.png","currency_name":"Cupons","revised_amount":"1000","currency_symbol":"R$","show_amount":"1000","currency":"BRL"},{"amount":"500","best_value":true,"gross":"5","currency_logo":"http:\/\/p.img.337.com\/pay\/ddtcupom.png","currency_name":"Cupons","revised_amount":"500","best_value_logo":"\/pay\/goodMark_bak.gif","currency_symbol":"R$","show_amount":"500","currency":"BRL"}],"uid":"123","app_id2":"","cs_form_title":"Abrir um chamado","tip_customer_support":"Faltando Cupons? Entre em contato com o nosso servi\u00e7o ao cliente.","label_continue":"Continuar","container_title":"Compre <vamount> Cupons com <amount>R$","country":"BR","image_337_url":"http:\/\/payment.eleximg.com\/payment","redmine_app_name":"ddt@elex337_pt_11","name":"ddt@elex337_pt_11","tip_get_more_credit":"Obtenha mais Cupons","app_id":"a82540d03cdc012e91ea1edb0f3c16bf","language":"pt","customer_service_email":"payment@elex-tech.com","tip_extra_bonus":"Voc\u00ea pode obter o pr\u00eamio extra a seguir, se voc\u00ea comprar com este pacote","payment_method":"pagseguro","channel":"pagseguro"},"boacompra_boacompra":{"uid":"123","list_packages":[{"amount":"50000","best_value":false,"gross":"500","currency_logo":"http:\/\/p.img.337.com\/pay\/ddtcupom.png","currency_name":"Cupons","revised_amount":"50000","currency_symbol":"R$","show_amount":"50000","currency":"BRL"},{"amount":"30000","best_value":false,"gross":"300","currency_logo":"http:\/\/p.img.337.com\/pay\/ddtcupom.png","currency_name":"Cupons","revised_amount":"30000","currency_symbol":"R$","show_amount":"30000","currency":"BRL"},{"amount":"10000","best_value":false,"gross":"100","currency_logo":"http:\/\/p.img.337.com\/pay\/ddtcupom.png","currency_name":"Cupons","revised_amount":"10000","currency_symbol":"R$","show_amount":"10000","currency":"BRL"},{"amount":"5000","best_value":false,"gross":"50","currency_logo":"http:\/\/p.img.337.com\/pay\/ddtcupom.png","currency_name":"Cupons","revised_amount":"5000","currency_symbol":"R$","show_amount":"5000","currency":"BRL"},{"amount":"3000","best_value":false,"gross":"30","currency_logo":"http:\/\/p.img.337.com\/pay\/ddtcupom.png","currency_name":"Cupons","revised_amount":"3000","currency_symbol":"R$","show_amount":"3000","currency":"BRL"},{"amount":"1000","best_value":false,"gross":"10","currency_logo":"http:\/\/p.img.337.com\/pay\/ddtcupom.png","currency_name":"Cupons","revised_amount":"1000","currency_symbol":"R$","show_amount":"1000","currency":"BRL"},{"amount":"500","best_value":true,"gross":"5","currency_logo":"http:\/\/p.img.337.com\/pay\/ddtcupom.png","currency_name":"Cupons","revised_amount":"500","best_value_logo":"\/pay\/goodMark_bak.gif","currency_symbol":"R$","show_amount":"500","currency":"BRL"}],"app_id2":"","cs_form_title":"Abrir um chamado","width":550,"tip_customer_support":"Faltando Cupons? Entre em contato com o nosso servi\u00e7o ao cliente.","container_title":"Compre <vamount> Cupons com <amount>R$","label_continue":"Continuar","country":"BR","image_337_url":"http:\/\/payment.eleximg.com\/payment","height":350,"redmine_app_name":"ddt@elex337_pt_11","name":"ddt@elex337_pt_11","tip_get_more_credit":"Obtenha mais Cupons","app_id":"a82540d03cdc012e91ea1edb0f3c16bf","language":"pt","customer_service_email":"payment@elex-tech.com","tip_extra_bonus":"Voc\u00ea pode obter o pr\u00eamio extra a seguir, se voc\u00ea comprar com este pacote","channel":"boacompra","payment_method":"boacompra","package_tip_payments":"<img width=\"42\" height=\"20\" src=\"http:\/\/p.img.elex-tech.us\/pay\/boa_payments\/amex.gif\" \/><img width=\"42\" height=\"20\" src=\"http:\/\/p.img.elex-tech.us\/pay\/boa_payments\/bancoreal.gif\" \/><img width=\"42\" height=\"20\" src=\"http:\/\/p.img.elex-tech.us\/pay\/boa_payments\/bb_online.gif\" \/><img width=\"42\" height=\"20\" src=\"http:\/\/p.img.elex-tech.us\/pay\/boa_payments\/boleto.gif\" \/><img width=\"42\" height=\"20\" src=\"http:\/\/p.img.elex-tech.us\/pay\/boa_payments\/bradesco.gif\" \/><img width=\"42\" height=\"20\" src=\"http:\/\/p.img.elex-tech.us\/pay\/boa_payments\/caixa.gif\" \/><img width=\"42\" height=\"20\" src=\"http:\/\/p.img.elex-tech.us\/pay\/boa_payments\/gold.gif\" \/><img width=\"42\" height=\"20\" src=\"http:\/\/p.img.elex-tech.us\/pay\/boa_payments\/hsbc.jpg\" \/><img width=\"42\" height=\"20\" src=\"http:\/\/p.img.elex-tech.us\/pay\/boa_payments\/itau_peq.gif\" \/><img width=\"42\" height=\"20\" src=\"http:\/\/p.img.elex-tech.us\/pay\/boa_payments\/redecard.gif\" \/><img width=\"42\" height=\"20\" src=\"http:\/\/p.img.elex-tech.us\/pay\/boa_payments\/visa.gif\" \/>"},"elex337_337":{"list_packages":[{"amount":"50000","best_value":false,"gross":"3000","currency_logo":"http:\/\/p.img.337.com\/pay\/ddtcupom.png","currency_name":"Cupons","revised_amount":"50000","currency_symbol":"","show_amount":"50000","currency":"Credits"},{"amount":"30000","best_value":false,"gross":"1800","currency_logo":"http:\/\/p.img.337.com\/pay\/ddtcupom.png","currency_name":"Cupons","revised_amount":"30000","currency_symbol":"","show_amount":"30000","currency":"Credits"},{"amount":"10000","best_value":false,"gross":"600","currency_logo":"http:\/\/p.img.337.com\/pay\/ddtcupom.png","currency_name":"Cupons","revised_amount":"10000","currency_symbol":"","show_amount":"10000","currency":"Credits"},{"amount":"5000","best_value":false,"gross":"300","currency_logo":"http:\/\/p.img.337.com\/pay\/ddtcupom.png","currency_name":"Cupons","revised_amount":"5000","currency_symbol":"","show_amount":"5000","currency":"Credits"},{"amount":"3000","best_value":false,"gross":"180","currency_logo":"http:\/\/p.img.337.com\/pay\/ddtcupom.png","currency_name":"Cupons","revised_amount":"3000","currency_symbol":"","show_amount":"3000","currency":"Credits"},{"amount":"1000","best_value":false,"gross":"60","currency_logo":"http:\/\/p.img.337.com\/pay\/ddtcupom.png","currency_name":"Cupons","revised_amount":"1000","currency_symbol":"","show_amount":"1000","currency":"Credits"},{"amount":"500","best_value":true,"gross":"30","currency_logo":"http:\/\/p.img.337.com\/pay\/ddtcupom.png","currency_name":"Cupons","revised_amount":"500","best_value_logo":"\/pay\/goodMark_bak.gif","currency_symbol":"","show_amount":"500","currency":"Credits"}],"uid":"123","app_id2":"","cs_form_title":"Abrir um chamado","tip_customer_support":"Faltando Cupons? Entre em contato com o nosso servi\u00e7o ao cliente.","label_continue":"Continuar","container_title":"Compre <vamount> Cupons com <amount>R$","country":"BR","image_337_url":"http:\/\/payment.eleximg.com\/payment","redmine_app_name":"ddt@elex337_pt_11","name":"ddt@elex337_pt_11","tip_get_more_credit":"Obtenha mais Cupons","app_id":"a82540d03cdc012e91ea1edb0f3c16bf","language":"pt","customer_service_email":"payment@elex-tech.com","tip_extra_bonus":"Voc\u00ea pode obter o pr\u00eamio extra a seguir, se voc\u00ea comprar com este pacote","payment_method":"337","channel":"elex337"},"ukash_ukash":{"uid":"123","list_packages":[{"amount":"50000","best_value":false,"gross":"245","currency_logo":"http:\/\/p.img.337.com\/pay\/ddtcupom.png","currency_name":"Cupons","revised_amount":"50000","currency_symbol":"$","show_amount":"50000","currency":"USD"},{"amount":"30000","best_value":false,"gross":"147","currency_logo":"http:\/\/p.img.337.com\/pay\/ddtcupom.png","currency_name":"Cupons","revised_amount":"30000","currency_symbol":"$","show_amount":"30000","currency":"USD"},{"amount":"10000","best_value":false,"gross":"49","currency_logo":"http:\/\/p.img.337.com\/pay\/ddtcupom.png","currency_name":"Cupons","revised_amount":"10000","currency_symbol":"$","show_amount":"10000","currency":"USD"},{"amount":"5000","best_value":false,"gross":"25","currency_logo":"http:\/\/p.img.337.com\/pay\/ddtcupom.png","currency_name":"Cupons","revised_amount":"5000","currency_symbol":"$","show_amount":"5000","currency":"USD"},{"amount":"3000","best_value":false,"gross":"15","currency_logo":"http:\/\/p.img.337.com\/pay\/ddtcupom.png","currency_name":"Cupons","revised_amount":"3000","currency_symbol":"$","show_amount":"3000","currency":"USD"},{"amount":"1000","best_value":false,"gross":"5","currency_logo":"http:\/\/p.img.337.com\/pay\/ddtcupom.png","currency_name":"Cupons","revised_amount":"1000","currency_symbol":"$","show_amount":"1000","currency":"USD"},{"amount":"500","best_value":true,"gross":"2","currency_logo":"http:\/\/p.img.337.com\/pay\/ddtcupom.png","currency_name":"Cupons","revised_amount":"500","best_value_logo":"\/pay\/goodMark_bak.gif","currency_symbol":"$","show_amount":"500","currency":"USD"}],"app_id2":"","cs_form_title":"Abrir um chamado","width":550,"tip_customer_support":"Faltando Cupons? Entre em contato com o nosso servi\u00e7o ao cliente.","container_title":"Compre <vamount> Cupons com <amount>$","label_continue":"Continuar","country":"BR","image_337_url":"http:\/\/payment.eleximg.com\/payment","height":450,"redmine_app_name":"ddt@elex337_pt_11","name":"ddt@elex337_pt_11","tip_get_more_credit":"Obtenha mais Cupons","app_id":"a82540d03cdc012e91ea1edb0f3c16bf","language":"pt","customer_service_email":"payment@elex-tech.com","tip_extra_bonus":"Voc\u00ea pode obter o pr\u00eamio extra a seguir, se voc\u00ea comprar com este pacote","channel":"ukash","payment_method":"ukash"},"eprepag_eprepag":{"list_packages":[{"amount":"6000","best_value":true,"gross":"100","currency_logo":"http:\/\/p.img.337.com\/pay\/ddtcupom.png","currency_name":"Cupons","revised_amount":"6000","best_value_logo":"\/pay\/goodMark_bak.gif","currency_symbol":"R$","show_amount":"6000","currency":"BRL"},{"amount":"3000","best_value":false,"gross":"50","currency_logo":"http:\/\/p.img.337.com\/pay\/ddtcupom.png","currency_name":"Cupons","revised_amount":"3000","currency_symbol":"R$","show_amount":"3000","currency":"BRL"},{"amount":"1500","best_value":false,"gross":"25","currency_logo":"http:\/\/p.img.337.com\/pay\/ddtcupom.png","currency_name":"Cupons","revised_amount":"1500","currency_symbol":"R$","show_amount":"1500","currency":"BRL"},{"amount":"600","best_value":false,"gross":"10","currency_logo":"http:\/\/p.img.337.com\/pay\/ddtcupom.png","currency_name":"Cupons","revised_amount":"600","currency_symbol":"R$","show_amount":"600","currency":"BRL"},{"amount":"300","best_value":false,"gross":"5","currency_logo":"http:\/\/p.img.337.com\/pay\/ddtcupom.png","currency_name":"Cupons","revised_amount":"300","currency_symbol":"R$","show_amount":"300","currency":"BRL"}],"uid":"123","app_id2":"","cs_form_title":"Abrir um chamado","tip_customer_support":"Faltando Cupons? Entre em contato com o nosso servi\u00e7o ao cliente.","label_continue":"Continuar","container_title":"Compre <vamount> Cupons com <amount>R$","country":"BR","image_337_url":"http:\/\/payment.eleximg.com\/payment","redmine_app_name":"ddt@elex337_pt_11","name":"ddt@elex337_pt_11","tip_get_more_credit":"Obtenha mais Cupons","app_id":"a82540d03cdc012e91ea1edb0f3c16bf","language":"pt","customer_service_email":"payment@elex-tech.com","tip_extra_bonus":"Voc\u00ea pode obter o pr\u00eamio extra a seguir, se voc\u00ea comprar com este pacote","payment_method":"eprepag","channel":"eprepag"}};
+list_channels_data.uid = uid;
+list_packages_data.uid = uid;
+
+(function(){
+  var cache = {};
+  this.tmpl = function tmpl(str, data){
+    // Figure out if we're getting a template, or if we need to
+    // load the template - and be sure to cache the result.
+    var fn = !/\W/.test(str) ?
+      cache[str] = cache[str] ||
+        tmpl(document.getElementById(str).innerHTML) :
+      // Generate a reusable function that will serve as a template
+      // generator (and which will be cached).
+        
+      new Function("obj",
+        "var p=[];" +
+        "p.push('" +    
+        // Convert the template into pure JavaScript
+        str
+          .replace(/[\r\t\n]/g, " ")
+          .split("<%").join("\t")
+          .replace(/((^|%>)[^\t]*)'/g, "$1\r")
+          .replace(/\t=(.*?)%>/g, "',$1,'")
+          .split("\t").join("');")
+          .split("%>").join("p.push('")
+          .split("\r").join("\\'")
+      + "');return p.join('');");
+    // Provide some basic currying to the user
+    return data ? fn( data ) : fn;
+  };
+})();
+
+function popup_dialogue(x,y,channel,paymentMethod,title,vamount,appId) {
+	var query_str = 'app_id='+appId+'&uid='+uid+'&channel='+channel+'&payment_method='+paymentMethod+'&width='+x+'&height='+y;
+	if (vamount) query_str += '&vamount='+vamount;
+	popup_dialogue_raw(x,y+5,title,query_str);
+}
+function popup_dialogue_raw(x,y,title,query_str) {
+	createBubble(x, y, title, 'http://payelex.appspot.com/popup_iframe?'+query_str);
+}
+function call_customer_service(cs_form_title) {
+	var x = 580; var y = 508;
+	var query_str = 'app_id='+appId+'&action=show_cs_form&uid='+uid;
+	popup_dialogue_raw(x,y,cs_form_title,query_str);
+}
+function getParameter(name){
+	var r=new RegExp("(\\?|#|&)"+name+"=([^&#]*)(&|#|$)");
+	var m=location.href.match(r);
+	return(!m?"":m[2]);
+}
+</script>
+<style type="text/css">
+<!--
+.ElxMain .payListCont .payListContWarp .desc img {border:1px solid #CCCCCC; margin:10px 0 0 10px;}
+.ElxMain .payListCont .payListContWarp .submit {cursor:pointer;}
+#country_list {text-align:right;padding:0px;margin:0 0 5px;}
+#country_list span { display:inline-block; height:24px;vertical-align:middle;}
+#country_list span img {width:25px; margin:4px 0 0 0;}
+#country_list span.inActive img { width:35px; margin:0;}
+#TB_window { border: 6px solid #EDAE6C;}
+-->
+</style>
+</head>
+
+<body>
+<div class="ElxpayBg" style="background:url(http://payment.eleximg.com/payment/pay/gamebg/ddt_br.jpg?2012) top center no-repeat">
+    <div class="payWrap">
+        <div class="ElxTop"></div>
+        <div class="ElxMain">
+			<div id="country_list"></div>
+            <div class="inTitle">
+            	<div class="payLi active">
+                	<div class="inNumber">1</div>
+                    <div id="tip_select_offer" class="inText"></div>
+                </div>
+                <div class="payLi active">
+                	<div class="inNumber">2</div>
+                    <div id="tip_choose_payment_method" class="inText"></div>
+                </div>
+                <div class="payLi" id="inLast">
+                	<div class="inNumber">3</div>
+                    <div id="tip_compare_and_order" class="inText"></div>
+                </div>
+                <div class="clear"></div>
+            </div>
+            <div class="inContent">
+            	<div class="payLeft">
+                	<div id="tip_select_payment_method" class="tagTitle"></div>
+                    <div id="payment_methods" class="payList"></div>	
+                </div>
+                <div class="payright">
+                    <div class="tagTitle">
+                    	<h1 id="tip_select_package"></h1>
+                        <p id="tip_customer_service_email"></p>
+                    </div>
+                    <div class="payListCont">
+                    	<div class="payListContWarp"></div>
+                    </div>
+                    <div class="contact"><a class="customer_service_link"></a></div>
+                </div>
+                <div class="clear"></div>
+            </div>
+        </div>
+        <div class="ElxFoot"></div>
+    </div>
+</div>
+<div id="offer_tab_display"></div>
+<div id="analytic_337_com"></div>
+<script type="text/html" id="payment_methods_tpl">
+	<% for(var i=0; i<obj.length; i++) { 
+	if(obj[i].channel == 'facebook') continue;
+	%>
+		<div class="payListLi">
+			<div class="payListLiWrap">
+				<div class="payName"><%=obj[i].alt%></div>
+				<div class="payImg"><img alt="<%=obj[i].alt%>" src="<%=obj[i].logo%>" id="<%=obj[i].channel%>_<%=obj[i].payment_method%>_tip"></div>
+			</div>	
+		</div>
+	<% } %>
+</script>
+<script type="text/html" id="list_packages_tpl">
+	<%var data = obj.list_packages; 
+	  for(var i=0; i<data.length; i++) { %>
+		<%if(data[i].best_value) {%> <li class="active"><%}	else {%><li><%}%>  	
+			<span class="select">
+		    	<input type="radio" value="<%=data[i].amount%>" id="<%=data[i].currency_name%>_<%=data[i].amount%>" name="vamount" <%if(data[i].best_value) {%> checked="checked"<%}%>>
+		        <input type="hidden" value="<%=data[i].gross%>" id="gross_<%=data[i].amount%>" name="gross_<%=data[i].amount%>">
+		        <input type="hidden" value="<%=data[i].revised_amount%>" id="show_vamount_<%=data[i].amount%>" name="show_vamount_<%=data[i].amount%>">
+		    </span>
+		    <span style="width:<%=obj.amount_width%>px;" class="vamount">
+		    	<%=data[i].show_amount%>
+		    	<%if(data[i].extra_amount) {%>
+		    		<b style="color: #cc0000; font-size: 13px;">+<%=data[i].extra_amount%></b>
+		    	<%}%>
+		    </span>
+		    <span class="ecoin"><img src="<%=data[i].currency_logo%>"></span>
+		    <span class="money"><%=data[i].currency_symbol%><%=data[i].gross%> <%=data[i].currency%></span>
+		    <%if(data[i].best_value) {%> 
+		    	<font title="Best Value!">Best Value!</font>
+		    <%}%>
+		</li>
+	<% } %>
+</script>
+<script type="text/html" id="offer_tpl">
+	<div id="offerTabs" class="offerTabs">
+		<ul>
+		<%var data = obj.offer; 
+		  for(var i=0; i<data.length; i++) { %>
+			<li><a href="#<%=data[i].channel%>-tab"><span><strong><%=data[i].name%></strong></span></a></li>
+		<% } %>
+		</ul>
+		<% for(var i=0; i<data.length; i++) { 
+			var uid = '{user';
+			uid += '_id}';
+			var src = data[i].src.replace(uid, obj.uid);%>
+			<div class="offerTab" id="<%=data[i].channel%>-tab" style="padding:0px;">
+				<%=data[i].tip_other_choice%><hr>
+				<iframe frameborder="0" height="650" width="100%" scrolling="auto" name="<%=data[i].channel%>_iframe" src="<%=src%>"></iframe>
+			</div>
+		<% } %>
+	</div>
+</script>
+<script type="text/html" id="country_list_tpl">
+	<%for(var country in obj.country_app_map){
+		var country_app_link = 'list_channels_'+obj.parent_app_id+'_'+country+'.html?uid='+obj.uid;
+		if(obj.parent_app_id == obj.country_app_map[country]) {
+			country_app_link = 'list_channels_'+obj.parent_app_id+'.html?uid='+obj.uid;
+		}
+	%>
+		<span <%if(country==obj.country){%>class="inActive"<%}%>><a target="_self" href="<%=country_app_link%>"><img src="http://p.img.elex-tech.us/pay/country/<%=country%>_logo.png"/></a></span>
+	<% } %>
+</script>
+<script language="javascript">
+var tip_select_package = '';
+var data = null;
+$(document).ready(function(){ 
+	loadChannels(list_channels_data);
+	var timestamp = (new Date().getTime()-new Date().getTime()%1000)/1000;
+	$("#analytic_337_com").html('<img src="http://analytic.337.com/'+timestamp+'/static.gif?appid='+redmine_app_name+'&event=pay.visit&uid='+uid+'&json_var=">');
+});
+
+function loadChannels(data) {
+	$('#tip_select_offer').html(data.tip_select_payment_method);
+	$('#tip_choose_payment_method').html(data.tip_select_package);
+	tip_select_package = data.tip_select_package;
+	$('#tip_compare_and_order').html(data.tip_compare_and_order);
+	$('#tip_select_payment_method').html(data.tip_select_payment_method);
+	$('#tip_select_package').html(data.tip_select_package);
+	$('#payment_methods').html(tmpl("payment_methods_tpl",data.payment_methods));
+	if(data.country_app_map) {
+		$('#country_list').html(tmpl("country_list_tpl",data));
+	}
+	if(!data.tip_customer_service_email || data.tip_customer_service_email=='payment@elex-tech.com') {
+		$('#tip_customer_service_email').html('<a href="javascript:call_customer_service(\''+data.cs_form_title+'\')">Customer Service</a>');
+	} else {
+		$('#tip_customer_service_email').html('<a href="mailto:'+data.tip_customer_service_email+'">Customer Service</a>');
+	}
+	if(data.offer) {
+		$('#offer_tab_display').html(tmpl("offer_tpl",data));
+		$("#offerTabs").tabs();
+	}
+	$('#payment_methods .payListLi').click(function(){
+		loadPackage($(this));
+	});
+	loadPackage($('.payListLi:first'));
+}
+
+
+function loadPackage(li) {
+	var id = li.find('.payImg img').attr('id');
+	var splits = id.split('_');
+	if(splits.size < 2) return;
+	var channel = splits[0];
+	var paymentMethod = splits[1];
+	for(var i=2; i<splits.length-1; i++)
+		paymentMethod += '_'+splits[i];
+	if (channel == 'ultimatepay' && paymentMethod == 'PK') {
+		popup_dialogue(710,425,channel,paymentMethod,tip_select_package,null,appId);
+		return false;
+	}
+	
+	if (channel == 'mozca') {
+		popup_dialogue(492,282,channel,paymentMethod,tip_select_package,null,appId);
+		return false;
+	}
+	$('#payment_methods .active').removeClass('active');
+	li.addClass('active');
+	$('.payListContWarp').html('<div id="loading" style="height: 100%; width: 100%; z-index: 100; text-align: center;"><img src="http://p.img.337.com/pay/loading2.gif" style="margin: 50px 0px;"></div>');
+	data = list_packages_data[channel+'_'+paymentMethod];
+	setTimeout(displayPackage, 300);
+}
+
+function displayPackage() {
+	$('.payListContWarp').html("<form id=\"payelex\" method=\"post\" action=\"http://payelex.appspot.com/payelex\" target=\"_blank\"><div id=\"hidden_params\"></div><div class=\"title\"><p></p></div><div class=\"desc\"></div><ul id=\"inputclick\"></ul><div class=\"submit\"><a href=\"\"></a></div></form>");
+	$('.payListContWarp form .desc').html(data.package_tip_payments);
+	$('#hidden_params').html('<input type="hidden" id="app_id" value="'+appId+'" name="app_id"> ');
+	$('#hidden_params').append('<input type="hidden" id="uid" value="'+uid+'" name="uid">');
+	$('#hidden_params').append('<input type="hidden" id="channel" value="'+data.channel+'" name="channel">');
+	$('#hidden_params').append('<input type="hidden" id="payment_method" value="'+data.payment_method+'" name="payment_method">');
+	$('.payListContWarp .title p').html(data.tip_get_more_credit);
+	data.amount_width = amount_width(data.list_packages);
+	$('#inputclick').html(tmpl("list_packages_tpl",data));
+	$('.payListContWarp .submit a').html(data.label_continue+' >');
+	if(!data.tip_customer_service_email || data.tip_customer_service_email=='payment@elex-tech.com') {
+		$('.customer_service_link').attr('href', 'javascript:call_customer_service(\''+data.cs_form_title+'\')');
+	} else {
+		$('.customer_service_link').attr('href', 'mailto:'+data.customer_service_email);
+	}
+
+	$('.customer_service_link').html(data.tip_customer_support);
+	$('.payListContWarp .submit').click(function(){
+		post_data(data.container_title, data.width, data.height);
+		return false;
+	});
+	
+	$(function(){
+		var inputclick = $("#inputclick li");
+		inputclick.click(function(){
+			$(this).addClass("active").siblings().removeClass("active");
+			if(!$('input',this).attr('disabled')){
+				$('input',this).attr('checked',true);
+			}
+		});
+	});
+}
+
+function amount_width(data) {
+	var max_width = 0;
+	for(var i=0; i<data.length; i++) {
+		var width = data[i].show_amount.length*10;
+		if(data[i].extra_amount)
+			width += data[i].extra_amount.length*10 + 5;
+		if(max_width < width)
+			max_width = width; 
+	}
+	return max_width;
+}
+
+function post_data(containerTitle, width, height) {
+	var channel = $('#channel').val();
+	var paymentMethod = $('#payment_method').val();
+	if (channel == 'paypal' || channel == 'moneybookers' || channel == 'pagseguro' || channel == 'mol' || channel=='dineromail' || channel=='infin' || (channel=='mycard' && paymentMethod=='points') || (channel=='gash' && paymentMethod=='h') || channel=='mikro' || channel=='tutudo' || channel=='dotpay' || channel=='mynet' || channel== 'gashplus' || channel== 'eprepag') {
+		$('#payelex').submit();
+		return;
+	}
+	var vamount = $('input:radio[name=vamount]:checked').val();
+	var amount = $('#gross_'+vamount).val();
+	var showVamount = $('#show_vamount_'+vamount).val();
+	containerTitle = containerTitle.replace("<vamount>", showVamount);
+	$('#payelex').attr('target', '_self');
+	var x = 580; var y = 520;
+	if (channel == 'zaypay') {
+		x = 580; y = 500;
+	}
+	if (channel == 'ultimatepay') {
+		x = 710; y = 425;
+	}
+	if (channel == 'adyen') {
+		x = 580; y = 590;
+	}
+	if(width && height) {
+		x = width; y=height;
+	}
+	popup_dialogue(x,y,channel,paymentMethod,containerTitle,vamount,$('#app_id').val());
+}
+
+</script>
+</body>
+</html>

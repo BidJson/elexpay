@@ -1,0 +1,57 @@
+<script src="jq.js"></script>
+<script src="print_r.js"></script>
+<script src="common.js"></script>
+<script src="json2.js"></script>
+
+<textarea cols="35" rows="35" id="input"></textarea>
+<textarea cols="125" rows="35" id="output"></textarea></br>
+<input type="button" value="urlencode" onclick="urlencode();" />
+<input type="button" value="urldecode" onclick="urldecode();" /></br>
+<input type="button" value="jsonencode" onclick="jsonencode();" />
+<input type="button" value="jsondecode" onclick="jsondecode();" /></br>
+<input type="button" value="qsdecode" onclick="qsdecode();" />
+<input type="button" value="qsencode" onclick="qsencode();" /></br>
+
+<script type="text/javascript">
+	var input = document.getElementById('input'),
+	    output = document.getElementById('output');
+
+	function urlencode(){
+		output.value = encodeURIComponent(input.value);
+	}
+
+	function urldecode(){
+		output.value = decodeURIComponent(input.value);
+	}
+	
+	function jsonencode(){
+		try{
+			var jsobj = eval("(" + input.value + ")");
+			output.value = JSON.stringify(jsobj);
+		}catch(error){
+			console.debug(error);
+			alert(error.message);
+			return;
+		}
+	}
+	
+	function jsondecode(){
+		print_r(JSON.parse(input.value));
+	}
+	
+	function qsdecode(){
+		print_r(Common.QS.decode(input.value));
+	}
+
+	function qsencode(){
+		try{
+			var jsobj = eval("(" + input.value + ")");
+			output.value = Common.QS.encode(jsobj);
+		}catch(error){
+			console.debug(error);
+			alert(error.message);
+			return;
+		}
+	}
+
+</script>

@@ -1,0 +1,17 @@
+	<div id="offerTabs" class="offerTabs">
+		<ul>
+		<%var data = obj.offer; 
+		  for(var i=0; i<data.length; i++) { %>
+			<li><a href="#<%=data[i].channel%>-tab"><span><strong><%=data[i].name%></strong></span></a></li>
+		<% } %>
+		</ul>
+		<% for(var i=0; i<data.length; i++) { 
+			var uid = '{user';
+			uid += '_id}';
+			var src = data[i].src.replace(uid, obj.uid);%>
+			<div class="offerTab" id="<%=data[i].channel%>-tab" style="padding:0px;">
+				<%=data[i].tip_other_choice%><hr>
+				<iframe frameborder="0" height="650" width="100%" scrolling="auto" name="<%=data[i].channel%>_iframe" src="<%=src%>"></iframe>
+			</div>
+		<% } %>
+	</div>
