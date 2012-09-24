@@ -1,0 +1,64 @@
+{
+   "uid":"123",
+   "payment_methods":[
+      {
+         "logo":"http://p.img.elex-tech.us/pay/pagseguro.png",
+         "alt":"pagseguro",
+         "channel":"pagseguro",
+         "payment_method":"pagseguro"
+      },
+      {
+         "logo":"http://p.img.elex-tech.us/pay/boacompra.png",
+         "alt":"boacompra",
+         "channel":"boacompra",
+         "payment_method":"boacompra"
+      },
+      {
+         "logo":"http://p.img.elex-tech.us/pay/mozca.png",
+         "alt":"Celular",
+         "channel":"mozca",
+         "payment_method":"mozca"
+      },
+      {
+         "logo":"http://p.img.elex-tech.us/pay/337credits.png",
+         "alt":"337",
+         "channel":"elex337",
+         "payment_method":"337"
+      },
+      {
+         "logo":"http://p.img.elex-tech.us/pay/ukash.png",
+         "alt":"Ukash",
+         "channel":"ukash",
+         "payment_method":"ukash"
+      },
+      {
+         "logo":"http://p.img.elex-tech.us/pay/eprepag.png",
+         "alt":"EPrePag",
+         "channel":"eprepag",
+         "payment_method":"eprepag"
+      }
+   ],
+   "tip_select_package":"Selecione o pacote",
+   "app_id2":"",
+   "tip_customer_service":"Servi?o de Atendimento ao Cliente",
+   "cs_form_title":"Abrir um chamado",
+   "offer":[
+      {
+         "name":"Sponsorpay",
+         "tip_other_choice":"Voc¨º tamb¨¦m pode comprar utilizando os seguintes meios de pagamento:",
+         "src":"http://iframe.sponsorpay.com/?appid=5542&uid={user_id}&pub0=a82540d03cdc012e91ea1edb0f3c16bf",
+         "channel":"sponsorpay"
+      }
+   ],
+   "tip_select_payment_method":"Selecione o meio de pagamento",
+   "country":"BR",
+   "list_channel_version":"6",
+   "image_337_url":"http://payment.eleximg.com/payment",
+   "redmine_app_name":"ddt@elex337_pt_11",
+   "tip_compare_and_order":"Compare and order",
+   "name":"ddt@elex337_pt_11",
+   "tip_customer_service_email":"payment@elex-tech.com",
+   "app_id":"a82540d03cdc012e91ea1edb0f3c16bf",
+   "language":"pt",
+   "tip_loading":"carga"
+}

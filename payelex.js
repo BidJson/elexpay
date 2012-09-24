@@ -59,12 +59,12 @@ if (!window.Payelex) {
         	return unload;
         },
         
-        _renderTemplate:function(node, src, data, callback, debug){
-        	if(!node || !node.nodeType) return;
+        _renderTemplate:function(src, data, callback, node, debug){
         	var cache = {};
         	var _tmpl = function(str, d){
 				  var fn =  new Function("obj",
 				        "var p=[];" +
+						"obj = obj || {}," + 
 				        "p.push('" +    
 				        // Convert the template into pure JavaScript
 				        str
@@ -77,19 +77,21 @@ if (!window.Payelex) {
 				          .split("\r").join("\\'")
 				        + "');return p.join('');");
 				      // Provide some basic currying to the user
-				  return d ? fn(d) : fn;
+				  return fn(d);
 			};
 			return (function(){
 				if(cache[src]){
-					$(node).html(_tmpl(cache[src], data));
-					callback && callback();
-					return;
+					var result = _tmpl(cache[src], data);
+					if(node && node.nodeType) $(node).html(result);
+					callback && callback(result);
+					return result;
 				}
 				$.ajax({
 					url : src,
 					success : function(resp){
-						$(node).html(_tmpl(resp, data));
-						callback && callback();
+						var result = _tmpl(resp, data);
+						if(node && node.nodeType) $(node).html(result);
+						callback && callback(result);
 					}
 				});
 			})();
@@ -98,8 +100,28 @@ if (!window.Payelex) {
         //default to find 'payelex-root'
         render:function(node){
         	//渲染模板
-        	var root = (node && node.nodeType) ? node : document.getElementById('payelex-root');
-        	this._renderTemplate(root, "templates/body.htm");
+        	var root = (node && node.nodeType) ? node : document.getElementById('payelex-root')
+				tmpl = this._renderTemplate;
+			var loadChannels = function(data){
+				tmpl("templates/payment_methods.htm",data.payment_methods, function(h){$('#payment_methods').html(h);})
+				if(data.country_app_map) {
+					tmpl("templates/country_list.htm",data, function(h){$('#country_list').html(h);});
+				}
+				if(!data.tip_customer_service_email || data.tip_customer_service_email=='payment@elex-tech.com') {
+					$('#tip_customer_service_email').html('<a href="javascript:call_customer_service(\''+data.cs_form_title+'\')">Customer Service</a>');
+				} else {
+					$('#tip_customer_service_email').html('<a href="mailto:'+data.tip_customer_service_email+'">Customer Service</a>');
+				}
+				if(data.offer) {
+					tmpl("templates/offer.htm",data, function(h){$('#offer_tab_display').html(h);});
+					//$("#offerTabs").tabs();
+				}
+				$('#payment_methods .payListLi').click(function(){
+					loadPackage($(this));
+				});
+				//loadPackage($('.payListLi:first'));
+			};
+        	tmpl("templates/body.htm", window.list_channels_data, function(){loadChannels(window.list_channels_data);}, root);
         	
         },
         /**
@@ -109,6 +131,7 @@ if (!window.Payelex) {
         	
         },
         addChannels:function(channel){
+			
         	if(Object.prototype.toString.call(channel) === '[object Array]'){
         		for(var i=0,l=channel.length;i<l;i++){
         			this._addChannel(channel[i]);
