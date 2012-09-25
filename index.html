@@ -2,16 +2,11 @@
 <html>
 <head>
 <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
-<!-- <link href="payelex.css" rel="stylesheet"/> -->
-<link href="https://elex-i.akamaihd.net/platform.elex-tech.us/337/pay/css/pay.css?2011031501" rel="stylesheet"/>
 <script src='lib/jquery.min.js'></script>
-<script src='lib/jquery.colorbox.js'></script>
-<script src='payelex.js'></script>
-<title>Insert title here</title>
+<title>Payelex</title>
 </head>
 <body>
-payelex<br>
-<div id='payelex-root'>content</div>
+<div id='payelex-root'></div>
 <script>
 var appId = 'a82540d03cdc012e91ea1edb0f3c16bf';
 var appId2 = '';
@@ -22,184 +17,31 @@ var list_packages_data = {"pagseguro_pagseguro":{"list_packages":[{"amount":"500
 list_channels_data.uid = uid;
 list_packages_data.uid = uid;
 
-var channels  = {
-	    "moneybookers_moneybookers": [{
-	        "name": "\u8fb2\u6c11\u5e63",
-	        "logo": "http:\/\/p.img.337.com\/\/redmine\/happyfarmer@facebook_tw_farmhk\/Bauerngeld.png",
-	        "currency": "TWD",
-	        "datas": [{
-	            "id": 1,
-	            "gross": 363,
-	            "discount": 1,
-	            "amount": 800,
-	            "free": 0,
-	            "product": "gold",
-	            "item": [],
-	            "encrypted_data": "1_1_gold_1",
-	            "item_logos": [],
-	            "order_info": "363;800;gold;\u8fb2\u6c11\u5e63;;http:\/\/p.img.337.com\/\/redmine\/happyfarmer@facebook_tw_farmhk\/Bauerngeld.png",
-	            "items": null,
-	            "best_value": "0"
-	        }, {
-	            "id": 2,
-	            "gross": 187,
-	            "discount": 1,
-	            "amount": 400,
-	            "free": 0,
-	            "product": "gold",
-	            "item": [],
-	            "encrypted_data": "1_1_gold_2",
-	            "item_logos": [],
-	            "order_info": "187;400;gold;\u8fb2\u6c11\u5e63;;http:\/\/p.img.337.com\/\/redmine\/happyfarmer@facebook_tw_farmhk\/Bauerngeld.png",
-	            "items": null,
-	            "best_value": "0"
-	        }, {
-	            "id": 3,
-	            "gross": 80,
-	            "discount": 1,
-	            "amount": 170,
-	            "free": 0,
-	            "product": "gold",
-	            "item": [],
-	            "encrypted_data": "1_1_gold_3",
-	            "item_logos": [],
-	            "order_info": "80;170;gold;\u8fb2\u6c11\u5e63;;http:\/\/p.img.337.com\/\/redmine\/happyfarmer@facebook_tw_farmhk\/Bauerngeld.png",
-	            "items": null,
-	            "best_value": "0"
-	        }, {
-	            "id": 4,
-	            "gross": 69,
-	            "discount": 1,
-	            "amount": 150,
-	            "free": 0,
-	            "product": "gold",
-	            "item": [],
-	            "encrypted_data": "1_1_gold_4",
-	            "item_logos": [],
-	            "order_info": "69;150;gold;\u8fb2\u6c11\u5e63;;http:\/\/p.img.337.com\/\/redmine\/happyfarmer@facebook_tw_farmhk\/Bauerngeld.png",
-	            "items": null,
-	            "best_value": "0"
-	        }, {
-	            "id": 5,
-	            "gross": 53,
-	            "discount": 1,
-	            "amount": 100,
-	            "free": 0,
-	            "product": "gold",
-	            "item": [],
-	            "encrypted_data": "1_1_gold_5",
-	            "item_logos": [],
-	            "order_info": "53;100;gold;\u8fb2\u6c11\u5e63;;http:\/\/p.img.337.com\/\/redmine\/happyfarmer@facebook_tw_farmhk\/Bauerngeld.png",
-	            "items": null,
-	            "best_value": "0"
-	        }, {
-	            "id": 6,
-	            "gross": 27,
-	            "discount": 1,
-	            "amount": 40,
-	            "free": 0,
-	            "product": "gold",
-	            "item": [],
-	            "encrypted_data": "1_1_gold_6",
-	            "item_logos": [],
-	            "order_info": "27;40;gold;\u8fb2\u6c11\u5e63;;http:\/\/p.img.337.com\/\/redmine\/happyfarmer@facebook_tw_farmhk\/Bauerngeld.png",
-	            "items": null,
-	            "best_value": "0"
-	        }],
-	        "extension": "",
-	        "id": "gold"
-	    }],
-	    "mycard_points": [{
-	        "name": "\u8fb2\u6c11\u5e63",
-	        "logo": "http:\/\/p.img.337.com\/\/redmine\/happyfarmer@facebook_tw_farmhk\/Bauerngeld.png",
-	        "currency": "TWD",
-	        "datas": [{
-	            "id": 1,
-	            "gross": 363,
-	            "discount": 1,
-	            "amount": 800,
-	            "free": 0,
-	            "product": "gold",
-	            "item": [],
-	            "encrypted_data": "1_3_gold_1",
-	            "item_logos": [],
-	            "order_info": "363;800;gold;\u8fb2\u6c11\u5e63;;http:\/\/p.img.337.com\/\/redmine\/happyfarmer@facebook_tw_farmhk\/Bauerngeld.png",
-	            "items": null,
-	            "best_value": "0"
-	        }, {
-	            "id": 2,
-	            "gross": 187,
-	            "discount": 1,
-	            "amount": 400,
-	            "free": 0,
-	            "product": "gold",
-	            "item": [],
-	            "encrypted_data": "1_3_gold_2",
-	            "item_logos": [],
-	            "order_info": "187;400;gold;\u8fb2\u6c11\u5e63;;http:\/\/p.img.337.com\/\/redmine\/happyfarmer@facebook_tw_farmhk\/Bauerngeld.png",
-	            "items": null,
-	            "best_value": "0"
-	        }, {
-	            "id": 3,
-	            "gross": 80,
-	            "discount": 1,
-	            "amount": 170,
-	            "free": 0,
-	            "product": "gold",
-	            "item": [],
-	            "encrypted_data": "1_3_gold_3",
-	            "item_logos": [],
-	            "order_info": "80;170;gold;\u8fb2\u6c11\u5e63;;http:\/\/p.img.337.com\/\/redmine\/happyfarmer@facebook_tw_farmhk\/Bauerngeld.png",
-	            "items": null,
-	            "best_value": "0"
-	        }, {
-	            "id": 4,
-	            "gross": 69,
-	            "discount": 1,
-	            "amount": 150,
-	            "free": 0,
-	            "product": "gold",
-	            "item": [],
-	            "encrypted_data": "1_3_gold_4",
-	            "item_logos": [],
-	            "order_info": "69;150;gold;\u8fb2\u6c11\u5e63;;http:\/\/p.img.337.com\/\/redmine\/happyfarmer@facebook_tw_farmhk\/Bauerngeld.png",
-	            "items": null,
-	            "best_value": "0"
-	        }, {
-	            "id": 5,
-	            "gross": 53,
-	            "discount": 1,
-	            "amount": 100,
-	            "free": 0,
-	            "product": "gold",
-	            "item": [],
-	            "encrypted_data": "1_3_gold_5",
-	            "item_logos": [],
-	            "order_info": "53;100;gold;\u8fb2\u6c11\u5e63;;http:\/\/p.img.337.com\/\/redmine\/happyfarmer@facebook_tw_farmhk\/Bauerngeld.png",
-	            "items": null,
-	            "best_value": "0"
-	        }, {
-	            "id": 6,
-	            "gross": 27,
-	            "discount": 1,
-	            "amount": 40,
-	            "free": 0,
-	            "product": "gold",
-	            "item": [],
-	            "encrypted_data": "1_3_gold_6",
-	            "item_logos": [],
-	            "order_info": "27;40;gold;\u8fb2\u6c11\u5e63;;http:\/\/p.img.337.com\/\/redmine\/happyfarmer@facebook_tw_farmhk\/Bauerngeld.png",
-	            "items": null,
-	            "best_value": "0"
-	        }],
-	        "extension": "",
-	        "id": "gold"
-	    }]
+function addScript(){
+	var args = arguments;
+	for(var i = 0, l = args.length; i < l; i++){
+	    var script = document.createElement('script'), src = args[i];
+	    script.type = "text/javascript";
+	    script.src = src;
+	    document.getElementsByTagName('HEAD')[0].appendChild(script);	
 	}
-	
-Payelex.render();
-Payelex.addChannels(channels);	
+}
+function addStyle(){
+	var args = arguments;
+	for(var i = 0, l = args.length; i < l; i++){
+	    var script = document.createElement('link'), src = args[i];
+	    script.type = "text/css";
+	    script.rel = "stylesheet";
+	    script.href = src;
+	    document.getElementsByTagName('HEAD')[0].appendChild(script);
+	}
+}
 
+window.PayelexLoaded = function(){Payelex.render();};
+$(document).ready(function(){
+	addStyle("colorbox.css", "payelex.css");
+	addScript("payelex.js", "lib/jquery.colorbox.js");		
+});	
 </script>
 </body>
 </html>

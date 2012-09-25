@@ -1,0 +1,427 @@
+@charset "utf-8";
+
+/* CSS Document */
+body {
+	margin: 0;
+	padding: 0;
+	font: normal 12px/20px "Helvetica Neue", "Luxi Sans", "DejaVu Sans",
+		Tahoma, "Hiragino Sans GB", STHeiti !important;;
+	background-color: #eee
+}
+
+.clear {
+	clear: both;
+}
+
+/**pay***********************/
+.ElxpayBg {
+	padding: 200px 0 50px;
+}
+
+.payWrap {
+	width: 800px;
+	margin: 0 auto;
+}
+
+.payWrap .ElxTop {
+	background: url(http://p.img.337.com/337/pay/payTBg.gif) no-repeat;
+	height: 10px;
+	overflow: hidden;
+	width: 800px;
+}
+
+.payWrap .ElxFoot {
+	background: url(http://p.img.337.com/337/pay/payBBg.gif) no-repeat;
+	height: 10px;
+	overflow: hidden;
+	width: 800px;
+}
+
+.payWrap .ElxMain {
+	background: url(http://p.img.337.com/337/pay/payMBg.gif) left top
+		repeat-y;
+	padding: 15px 25px;
+	width: 750px;
+}
+
+.ElxMain .inTitle {
+	height: 29px;
+}
+
+.ElxMain .payLi {
+	background: url(http://p.img.337.com/337/pay/payImages.gif?2011031501)
+		no-repeat 0 -35px;
+	width: 249px;
+	height: 29px;
+	margin: 0 5px 0 0;
+	float: left;
+	display: inline;
+	color: #fff
+}
+
+.ElxMain .payLi .inNumber {
+	width: 30px;
+	height: 29px;
+	float: left;
+	font: bold 17px/29px Tahoma;
+	text-align: center;
+}
+
+.ElxMain .payLi .inText {
+	width: 210px;
+	float: right;
+	height: 29px;
+	text-align: left;
+	font: bold 12px/29px Tahoma;
+	color: #aaa;
+}
+
+.ElxMain .payLi#inLast {
+	width: 225px
+}
+
+.ElxMain .payLi#inLast .inText {
+	width: 190px;
+	background: url(http://p.img.337.com/337/pay/payImages.gif?2011031501)
+		no-repeat right 0;
+}
+
+.ElxMain .payLi.active {
+	background-position: 0 0;
+	color: #edae6c
+}
+
+.ElxMain .payLi.active .inText {
+	color: #edae6c;
+}
+
+.ElxMain .payLi#inLast.active .inText {
+	background-position: right -35px;
+}
+
+.ElxMain .inContent {
+	width: 750px;
+	margin: 10px 0 0;
+}
+
+.ElxMain .payLeft {
+	width: 214px;
+	float: left;
+	position: relative;
+	border-right: 1px solid #ccc;
+}
+
+.ElxMain .payLeft .tagTitle {
+	width: 199px;
+	height: 26px;
+	background: url(http://p.img.337.com/337/pay/payImages.gif?2011031501)
+		no-repeat 0 -74px;
+	color: #edae6c;
+	font: bold 12px/26px Tahoma;
+	padding: 0 0 0 10px;
+}
+
+.ElxMain .payList {
+	width: 214px;
+	padding: 10px 0 0;
+}
+
+.ElxMain .payList .payListLi {
+	width: 214px;
+	border-bottom: 1px solid #ccc;
+	cursor: pointer;
+	height: 39px;
+	position: relative;
+}
+
+.ElxMain .payList .payListLi:hover {
+	background-color: #c1d4e6;
+}
+
+.ElxMain .payListLi .payListLiWrap {
+	width: 214px;
+	height: 39px;
+}
+
+.ElxMain .payListLi .payName {
+	width: 95px;
+	height: 39px;
+	padding: 0 0 0 10px;
+	color: #fff;
+	float: left;
+	font: normal 12px/39px Tahoma;
+	color: #000;
+}
+
+.ElxMain .payListLi .payImg {
+	width: 97px;
+	height: 31px;
+	padding: 4px 5px 0 0;
+	float: right;
+}
+
+.ElxMain .payListLi.active {
+	border: 0;
+}
+
+.ElxMain .payListLi.active .payName {
+	color: #fff;
+}
+
+.ElxMain .payListLi.active .payListLiWrap {
+	width: 214px;
+	padding: 0 21px 0 0;
+	position: absolute;
+	top: 0;
+	left: 0;
+	background: url(http://p.img.337.com/337/pay/payImages.gif?2011031501)
+		no-repeat 0 -119px;
+}
+
+.ElxMain .payright {
+	width: 530px;
+	float: right
+}
+
+.ElxMain .payright .tagTitle {
+	width: 520px;
+	height: 26px;
+	background: url(http://p.img.337.com/337/pay/payImages.gif?2011031501)
+		no-repeat -249px -72px;
+	color: #edae6c;
+	padding: 0 0 0 10px;
+	position: relative;
+}
+
+.ElxMain .payright .tagTitle h1 {
+	width: 300px;
+	height: 26px;
+	float: left;
+	font: bold 12px/26px Tahoma;
+	padding: 0;
+	margin: 0;
+}
+
+.ElxMain .payright .tagTitle p {
+	width: 20px;
+	height: 20px;
+	position: absolute;
+	top: 3px;
+	right: 10px;
+	margin: 0;
+	padding: 0;
+}
+
+.ElxMain .payright .tagTitle p a {
+	display: block;
+	width: 20px;
+	height: 20px;
+	text-indent: -10000px;
+	overflow: hidden;
+}
+
+.ElxMain .payright .payListCont {
+	margin: 15px 0 0 25px;
+	-moz-border-radius: 3px;
+	-webkit-border-radius: 3px;
+	border: 1px solid #C1D4E6;
+	padding: 6px;
+	width: 493px;
+}
+
+.ElxMain .payright .payListCont .payListContWarp {
+	background-color: #eee;
+	-moz-border-radius: 3px;
+	-webkit-border-radius: 3px;
+	width: 473px;
+	padding: 5px 10px 10px;
+}
+
+.ElxMain .payListContWarp .title {
+	border-bottom: 1px solid #fff;
+	font: bold 12px/26px Tahoma;
+}
+
+.ElxMain .payListContWarp .title p {
+	margin: 0;
+	border-bottom: 1px solid #ccc;
+	padding: 0 10px;
+}
+
+.ElxMain .payListContWarp ul#inputclick {
+	display: inline-block;
+	padding: 5px 0;
+	margin: 0;
+	width: 100%;
+}
+
+.ElxMain .payListContWarp li {
+	margin: 0;
+	list-style: none;
+	padding: 3px 0;
+	height: 30px;
+	margin: 2px 0;
+	overflow: hidden;
+	cursor: pointer;
+}
+
+.ElxMain .payListContWarp li.active {
+	background-color: #fff9e7;
+	color: #000;
+}
+
+.ElxMain .payListContWarp li:hover {
+	background-color: #fff9e7;
+}
+
+.ElxMain .payListContWarp li img {
+	vertical-align: middle;
+}
+
+.ElxMain .payListContWarp li input {
+	vertical-align: middle;
+	margin: 0;
+	border: 0;
+	padding: 0;
+	height: 15px;
+	width: 15px;
+}
+
+.ElxMain .payListContWarp li span {
+	float: left;
+	height: 30px;
+	padding: 0 5px;
+	line-height: 30px;
+}
+
+.ElxMain .payListContWarp li span.select {
+	padding: 8px 5px 0;
+}
+
+.ElxMain .payListContWarp li span.vamount {
+	font: bold 16px/30px Arial, Helvetica, sans-serif;
+}
+
+.ElxMain .payListContWarp li span.ecoin {
+	
+}
+
+.ElxMain .payListContWarp li span.money {
+	font-size: 14px;
+}
+
+.ElxMain .payListContWarp li font {
+	float: left;
+	width: 24px;
+	height: 24px;
+	padding: 3px 5px 0 15px;
+	background: url(http://p.img.337.com/337/pay/payImages.gif?2011031501)
+		no-repeat -315px -2px;
+	text-indent: -10000px;
+}
+
+.ElxMain .payListCont .submit {
+	width: 120px;
+	height: 35px;
+	margin: 15px 0 0;
+	background: url(http://p.img.337.com/337/pay/payImages.gif?2011031501)
+		no-repeat 0 -165px;
+	padding: 0 0 0 36px;
+}
+
+.ElxMain .payListCont .submit a {
+	font: bold 13px/32px Tahoma;
+	color: #fff;
+	text-decoration: none
+}
+
+.ElxMain .payListCont .submit a:hover {
+	text-decoration: none;
+}
+
+.ElxMain .payright .contact {
+	text-align: right;
+	height: 20px;
+}
+
+.ElxMain .payright .contact a {
+	text-decoration: none;
+	color: #666;
+	font: normal 11px/20px Tahoma;
+}
+
+.ElxMain .payright .contact a:hover {
+	text-decoration: underline;
+	color: #c00;
+}
+
+.ElxMain .payListCont .payListContWarp .desc img {border:1px solid #CCCCCC; margin:10px 0 0 10px;}
+.ElxMain .payListCont .payListContWarp .submit {cursor:pointer;}
+#country_list {text-align:right;padding:0px;margin:0 0 5px;}
+#country_list span { display:inline-block; height:24px;vertical-align:middle;}
+#country_list span img {width:25px; margin:4px 0 0 0;}
+#country_list span.inActive img { width:35px; margin:0;}
+
+.offerTabs {
+	background: #fff;
+	padding: 2px;
+	border-color: #AAA;
+	border-width: 1px;
+	border-style: solid;
+	-moz-border-radius: 4px;
+	-webkit-border-radius: 4px;
+	-khtml-border-radius: 4px;
+	border-radius: 4px;
+}
+
+.offerTabs ul {
+	background: #CCC;
+	background: -webkit-linear-gradient(#eaeaea, #CCC);
+	background: -moz-linear-gradient(#eaeaea, #CCC);
+	background: -ms-linear-gradient(#eaeaea, #CCC);
+	background: -o-linear-gradient(#eaeaea, #CCC);
+	background: linear-gradient(#eaeaea, #CCC);
+	-pie-background: linear-gradient(#eaeaea, #CCC);
+	padding: 2px 2px 0px 2px;
+	margin: 0px;
+	border-color: #AAA;
+	border-width: 1px;
+	border-style: solid;
+	-moz-border-radius: 4px;
+	-webkit-border-radius: 4px;
+	-khtml-border-radius: 4px;
+	border-radius: 4px;
+}
+
+.offerTabs ul li {
+	list-style: none;
+	display: inline-block;
+	margin-bottom : -1px;
+	background-color: #e6e6e6;
+	border-color: #555;
+	border-width: 1px 1px 1px 1px;
+	border-style: solid;
+	border-bottom-color: #fff;
+	-moz-border-radius: 4px 4px 0 0 ;
+	-webkit-border-radius: 4px 4px 0 0 ;
+	-khtml-border-radius: 4px 4px 0 0 ;
+	border-radius: 4px 4px 0 0 ;
+	zoom: 1;
+	*display:inline;
+}
+
+.offerTabs ul li:hover {
+	background-color: #dadada;
+}
+
+.offerTabs ul li.active {
+	background-color: #fff;
+}
+
+.offerTabs ul li a {
+	color: #000;
+	float : left;
+	padding: .5em 1em;
+	text-decoration : none;
+	cursor: text
+}

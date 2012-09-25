@@ -1,0 +1,36 @@
+<form id="payelex" target="_blank" action="http://payelex.appspot.com/payelex" method="post">
+	<div id="hidden_params">
+		<input id="app_id" type="hidden" name="app_id" value="<%=obj.appId%>">
+		<input id="uid" type="hidden" name="uid" value="<%=obj.uid%>">
+		<input id="channel" type="hidden" name="channel" value="<%=obj.channel%>">
+		<input id="payment_method" type="hidden" name="payment_method" value="<%=obj.payment_method%>">
+	</div>
+	<div class="title">
+		<p><%=obj.tip_get_more_credit%></p>
+	</div>
+	<div class="desc"><%=obj.package_tip_payments%></div>
+	<ul id="inputclick">
+		<%var data = obj.list_packages; 
+		  for(var i=0; i<data.length; i++) { %>
+			<%if(data[i].best_value) {%> <li class="active"><%}	else {%><li><%}%>  	
+				<span class="select">
+			    	<input type="radio" value="<%=data[i].amount%>" id="<%=data[i].currency_name%>_<%=data[i].amount%>" name="vamount" <%if(data[i].best_value) {%> checked="checked"<%}%>>
+			        <input type="hidden" value="<%=data[i].gross%>" id="gross_<%=data[i].amount%>" name="gross_<%=data[i].amount%>">
+			        <input type="hidden" value="<%=data[i].revised_amount%>" id="show_vamount_<%=data[i].amount%>" name="show_vamount_<%=data[i].amount%>">
+			    </span>
+			    <span style="width:<%=obj.amount_width%>px;" class="vamount">
+			    	<%=data[i].show_amount%>
+			    	<%if(data[i].extra_amount) {%>
+			    		<b style="color: #cc0000; font-size: 13px;">+<%=data[i].extra_amount%></b>
+			    	<%}%>
+			    </span>
+			    <span class="ecoin"><img src="<%=data[i].currency_logo%>"></span>
+			    <span class="money"><%=data[i].currency_symbol%><%=data[i].gross%> <%=data[i].currency%></span>
+			    <%if(data[i].best_value) {%> 
+			    	<font title="Best Value!">Best Value!</font>
+			    <%}%>
+			</li>
+		<% } %>
+	</ul>
+	<div class="submit"><a href="#"><%=obj.label_continue%></a></div>
+</form>

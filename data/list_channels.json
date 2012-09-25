@@ -1,64 +1,64 @@
 {
-   "uid":"123",
+   "app_id":"a82540d03cdc012e91ea1edb0f3c16bf",
+   "app_id2":"",
+   "country":"BR",
+   "cs_form_title":"Abrir um chamado",
+   "image_337_url":"http://payment.eleximg.com/payment",
+   "language":"pt",
+   "list_channel_version":"6",
+   "name":"ddt@elex337_pt_11",
+   "offer":[
+      {
+         "channel":"sponsorpay",
+         "name":"Sponsorpay",
+         "src":"http://iframe.sponsorpay.com/?appid=5542&uid={user_id}&pub0=a82540d03cdc012e91ea1edb0f3c16bf",
+         "tip_other_choice":"Voc√™ tamb√©m pode comprar utilizando os seguintes meios de pagamento:"
+      }
+   ],
    "payment_methods":[
       {
-         "logo":"http://p.img.elex-tech.us/pay/pagseguro.png",
          "alt":"pagseguro",
          "channel":"pagseguro",
+         "logo":"http://p.img.elex-tech.us/pay/pagseguro.png",
          "payment_method":"pagseguro"
       },
       {
-         "logo":"http://p.img.elex-tech.us/pay/boacompra.png",
          "alt":"boacompra",
          "channel":"boacompra",
+         "logo":"http://p.img.elex-tech.us/pay/boacompra.png",
          "payment_method":"boacompra"
       },
       {
-         "logo":"http://p.img.elex-tech.us/pay/mozca.png",
          "alt":"Celular",
          "channel":"mozca",
+         "logo":"http://p.img.elex-tech.us/pay/mozca.png",
          "payment_method":"mozca"
       },
       {
-         "logo":"http://p.img.elex-tech.us/pay/337credits.png",
          "alt":"337",
          "channel":"elex337",
+         "logo":"http://p.img.elex-tech.us/pay/337credits.png",
          "payment_method":"337"
       },
       {
-         "logo":"http://p.img.elex-tech.us/pay/ukash.png",
          "alt":"Ukash",
          "channel":"ukash",
+         "logo":"http://p.img.elex-tech.us/pay/ukash.png",
          "payment_method":"ukash"
       },
       {
-         "logo":"http://p.img.elex-tech.us/pay/eprepag.png",
          "alt":"EPrePag",
          "channel":"eprepag",
+         "logo":"http://p.img.elex-tech.us/pay/eprepag.png",
          "payment_method":"eprepag"
       }
    ],
-   "tip_select_package":"Selecione o pacote",
-   "app_id2":"",
-   "tip_customer_service":"Servi?o de Atendimento ao Cliente",
-   "cs_form_title":"Abrir um chamado",
-   "offer":[
-      {
-         "name":"Sponsorpay",
-         "tip_other_choice":"Voc®∫ tamb®¶m pode comprar utilizando os seguintes meios de pagamento:",
-         "src":"http://iframe.sponsorpay.com/?appid=5542&uid={user_id}&pub0=a82540d03cdc012e91ea1edb0f3c16bf",
-         "channel":"sponsorpay"
-      }
-   ],
-   "tip_select_payment_method":"Selecione o meio de pagamento",
-   "country":"BR",
-   "list_channel_version":"6",
-   "image_337_url":"http://payment.eleximg.com/payment",
    "redmine_app_name":"ddt@elex337_pt_11",
    "tip_compare_and_order":"Compare and order",
-   "name":"ddt@elex337_pt_11",
+   "tip_customer_service":"Servi√ßo de Atendimento ao Cliente",
    "tip_customer_service_email":"payment@elex-tech.com",
-   "app_id":"a82540d03cdc012e91ea1edb0f3c16bf",
-   "language":"pt",
-   "tip_loading":"carga"
+   "tip_loading":"carga",
+   "tip_select_package":"Selecione o pacote",
+   "tip_select_payment_method":"Selecione o meio de pagamento",
+   "uid":"123"
 }
